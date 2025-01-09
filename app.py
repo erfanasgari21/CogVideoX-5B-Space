@@ -488,4 +488,5 @@ with gr.Blocks() as demo:
 
 if __name__ == "__main__":
     demo.queue(max_size=15)
-    demo.launch()
+    demo.launch(server_name="0.0.0.0", server_port=7860)
+
