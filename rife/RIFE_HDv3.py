@@ -51,6 +51,7 @@ class Model:
             torch.save(self.flownet.state_dict(), "{}/flownet.pkl".format(path))
 
     def inference(self, img0, img1, scale=1.0):
+
         imgs = torch.cat((img0, img1), 1)
         scale_list = [4 / scale, 2 / scale, 1 / scale]
         flow, mask, merged = self.flownet(imgs, scale_list)
