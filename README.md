@@ -1,3 +1,4 @@
+
 ---
 title: CogVideoX-5B
 emoji: 🎥
@@ -10,12 +11,12 @@ suggested_storage: large
 app_port: 7860
 app_file: app.py
 models:
-  - THUDM/CogVideoX-5b
+  - THUDM/CogVideoX-5b-I2V
 tags:
   - cogvideox
   - video-generation
   - thudm
-short_description: Text-to-Video
+short_description: Image-to-Video, Video-to-Video
 disable_embedding: false
 ---
 
@@ -24,24 +25,20 @@ disable_embedding: false
 This Gradio demo integrates the CogVideoX-5B model, allowing you to perform video inference directly in your browser. It
 supports features like UpScale, RIFE, and other functionalities.
 
-## Environment Setup
-
-Set the following environment variables in your system:
-
-+ OPENAI_API_KEY = your_api_key
-+ OPENAI_BASE_URL= your_base_url
-+ GRADIO_TEMP_DIR= gradio_tmp
-
-## Installation
+## Local Run
+### Installation
+After cloning this repository, install the required packages:
 
 ```bash
-pip install -r requirements.txt 
+pip install -r requirements.txt
 ```
 
-## Running the code
+### Running the code
 
 ```bash
-python gradio_web_demo.py
+python app.py
 ```
+Then the app will be accessible at `0.0.0.0:7860`. If it is not accessible from your browser, change the ip in [this file](https://github.com/erfanasgari21/CogVideoX-5B-Space/blob/924868c8c2084df1bcf1f86edcb0ec8da97a502e/app.py#L491) to `127.0.0.1` to be accessible from `localhost`.
+
 
 
