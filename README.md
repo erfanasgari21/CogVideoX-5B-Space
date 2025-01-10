@@ -20,6 +20,7 @@ short_description: Image-to-Video
 disable_embedding: false
 ---
 
+
 # Gradio Composite Demo
 
 This Gradio demo integrates the CogVideoX-5B model, allowing you to perform video inference directly in your browser. It
