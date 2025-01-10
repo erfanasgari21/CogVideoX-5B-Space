@@ -1,25 +1,4 @@
 
----
-title: CogVideoX-5B
-emoji: 🎥
-colorFrom: yellow
-colorTo: blue
-sdk: gradio
-sdk_version: 4.44.0
-suggested_hardware: l40sx1
-suggested_storage: large
-app_port: 7860
-app_file: app.py
-models:
-  - THUDM/CogVideoX-5b-I2V
-tags:
-  - cogvideox
-  - video-generation
-  - thudm
-short_description: Image-to-Video
-disable_embedding: false
----
-
 
 # Gradio Composite Demo
 
