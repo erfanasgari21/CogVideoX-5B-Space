@@ -16,7 +16,7 @@ tags:
   - cogvideox
   - video-generation
   - thudm
-short_description: Image-to-Video, Video-to-Video
+short_description: Image-to-Video
 disable_embedding: false
 ---
 
